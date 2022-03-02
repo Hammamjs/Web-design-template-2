@@ -36,6 +36,13 @@ body {
     -o-transition: .7s;
 }
 
+.button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
 .main-heading:hover {
     color: white;
     border: 2px solid white;
@@ -172,9 +179,8 @@ body {
     width: 100%;
     left: 0;
     background-color: white;
-    z-index: -1;
-    opacity: 0;
-    display: flex;
+    z-index: 10;
+    display: none;
     align-items: center;
     border-bottom: 3px solid var(--main-color);
     top: calc(100% + 50px);
@@ -184,6 +190,14 @@ body {
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+}
+
+.show {
+    display: none;
+}
+
+.active {
+    display: flex;
 }
 
 @media (max-width : 767px) {
@@ -296,11 +310,11 @@ body {
     -o-transform: var(--main-transition);
 }
 
-.header .main-nav > li:hover .mega-menu {
+/* .header .main-nav > li:hover .mega-menu {
     opacity: 1;
     z-index: 2;
     top: calc(100% + 1px);
-}
+} */
 
 @media (max-width : 767px) {
     .header .main-nav > li > a {
@@ -375,7 +389,6 @@ body {
 @media (max-width : 991px) {
 .landing .landing-image img{
     display: none;
-
     }
 }
 
@@ -555,11 +568,11 @@ body {
 .gallery .box .image{
     position: relative;
     overflow: hidden;
-    /* transition: 5s;
+    transition: 5s;
     -webkit-transition: 5s;
     -moz-transition: 5s;
     -ms-transition: 5s;
-    -o-transition: 5s; */
+    -o-transition: 5s;
 }
 
 .gallery .box .image:hover img{
@@ -1150,9 +1163,14 @@ body {
 }
 
 .our-skills .skills .skill .prog span {
-    position: absolute;
-    height: 30px;
-    background-color: var(--main-color);
+        position: absolute;
+        height: 30px;
+        background-color: var(--main-color);
+        transition: var(--main-transition);
+        -webkit-transition: var(--main-transition);
+        -moz-transition: var(--main-transition);
+        -ms-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
 }
 /* End Our Skills */
 
@@ -2085,12 +2103,12 @@ body {
 }
 
 .dots-up {
-    top: 200px;
+    top: 100px;
     right: 0;
 }
 
 .dots-bottom {
-    bottom: 200px;
+    bottom: 50px;
     left: 0;
 }
 /* End Special */

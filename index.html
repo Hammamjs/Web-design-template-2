@@ -23,47 +23,47 @@
             <a href="" class = "logo">Hammam</a>
                 <ul class="main-nav">
                     <li><a href="#articles">Articles</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#feature">Features</a></li>
                     <li>
-                        <a href="#">Other Links</a>
+                        <a href="#" id="show">Other Links</a>
         <!-- Start Mega-Menu -->
-                        <div class="mega-menu">
+                        <div class="mega-menu show  " id='mega-menu'>
                             <div class="img">
                                 <img src="css/img/word-press.png" alt="">
                             </div>
                             <ul class="links">
                                 <li>
-                                    <a href="#"><i class="far fa-comments fa-fw"></i> Testmonials</a>
+                                    <a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testmonials</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="far fa-user fa-fw"></i> Team Members</a>
+                                    <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="far fa-building fa-fw"></i> Services</a>
+                                    <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
+                                    <a href="#skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="far fa-clipboard fa-fw"></i> How it Works</a>
+                                    <a href="#how-it-work"><i class="far fa-clipboard fa-fw"></i> How it Works</a>
                                 </li>
                             </ul>
                             <ul class="links">
                                 <li>
-                                    <a href="#"><i class="far fa-calendar fa-fw"></i> Events</a>
+                                    <a href="#events"><i class="far fa-calendar fa-fw"></i> Events</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
+                                    <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="far fa-play-circle fa-fw"></i>Top Videos</a>
+                                    <a href="#top"><i class="far fa-play-circle fa-fw"></i>Top Videos</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fas fa-chart-bar fa-fw"></i> Stats</a>
+                                    <a href="#stats"><i class="fas fa-chart-bar fa-fw"></i> Stats</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
+                                    <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
                                 </li>
                             </ul>
                             
@@ -87,7 +87,7 @@
                 </p>
             </div>
             <div class="landing-image">
-                <img src="css/img/web-development-removebg-preview.png" alt="">
+                <img src="css/img/Learning-and-development-removebg-preview.png" alt="">
             </div>
         </div>
         <a class="angle-down" href="#articles">
@@ -248,7 +248,7 @@
     </div>
     <!-- End Gallery -->
     <!-- Start Features -->
-    <div class="feature">
+    <div class="feature" id='feature'>
         <h2 class="main-heading">Feature</h2>
         <div class="container">
             <div class="box Quality">
@@ -292,9 +292,11 @@
     </div>
     <div class="spikes"></div>
     <!-- End Features -->
-
+    <div class="button" id='button'>
+                <i class="far fa-arrow-alt-circle-up fa-2x"></i>
+    </div>
     <!-- Start Testimonials -->
-    <div class="testimonials">
+    <div class="testimonials" id='testimonials'>
     <h2 class="main-heading">Testimonals</h2>
     <div class="container">
         <div class="box">
@@ -394,7 +396,7 @@
     <!-- End Testimonials -->
 
     <!-- Start Team Members -->
-    <div class="team">
+    <div class="team" id='team'>
         <h2 class="main-heading">Team</h2>
         <div class="container">
             <div class="box">
@@ -555,7 +557,7 @@
     <!-- Start Services -->
 
     <!-- Start Our Skills -->
-    <div class="our-skills">
+    <div class="our-skills" id='skills'>
         <h2 class="main-heading">Our Skills</h2>
         <div class="container">
                 <img src="css/img/lap.png" alt="">
@@ -563,25 +565,25 @@
                     <div class="skill">
                         <h3>Html <span>90%</span></h3>
                         <div class="prog">
-                            <span style="width: 90%;"></span>
+                            <span style="width: 0%;" data-width="90%"></span>
                         </div>
                     </div>
                     <div class="skill">
                         <h3>Css <span>70%</span></h3>
                         <div class="prog">
-                            <span style="width: 70%;"></span>
+                            <span style="width: 0%;"data-width ="70%"></span>
                         </div>
                     </div>
                     <div class="skill">
                         <h3>Bootstrap <span>80%</span></h3>
                         <div class="prog">
-                            <span style="width: 80%;"></span>
+                            <span style="width: 0%;" data-width ="70%"></span>
                         </div>
                     </div>
                     <div class="skill">
                         <h3>Java Script <span>95%</span></h3>
                         <div class="prog">
-                        <span style="width: 95%;"></span>
+                        <span style="width: 0%;" data-width ="95%"></span>
                         </div>
                     </div>
                 </div>
@@ -592,7 +594,7 @@
     <!-- End Our Skills -->
 
     <!-- Start Work -->
-    <div class="work">
+    <div class="work" id='how-it-work'>
         <h2 class="main-heading">How It Work ?</h2>
         <div class="container">
             <img src="css/img/cssImg.png" alt="">
@@ -631,7 +633,7 @@
     <!-- End Work -->
 
 <!-- Start Latest Event -->
-    <div class="events">
+    <div class="events" id='events'>
     <div class="dots dots-up"></div>
     <div class="dots dots-bottom"></div>
         <h2 class="main-heading">Latest Events</h2>
@@ -640,19 +642,19 @@
             <div class="ev">
             <div class="count-down">
             <div class="count">
-                <h4>15</h4>
+                <h4 id='days'>15</h4>
                 <span>Day</span>
                 </div>
                 <div class="count">
-                <h4>08</h4>
+                <h4 id='hours'>08</h4>
                 <span>Hours</span>
                 </div>
                 <div class="count">
-                    <h4>45</h4>
+                    <h4 id='minutes'>45</h4>
                     <span>Minutes</span>
                 </div>
                 <div class="count">
-                    <h4>55</h4>
+                    <h4 id='seconds'>55</h4>
                 <span>Seconds</span>
                 </div>
             </div>
@@ -674,7 +676,7 @@
 <!-- End Latest Event -->
 
 <!-- Start Pricing -->
-<div class="pricing">
+<div class="pricing" id='pricing'>
     <h2 class="main-heading">Pricing Plans</h2>
     <div class="container">
         <div class="dots dots-up"></div>
@@ -733,7 +735,7 @@
 <!-- End Pricing -->
 
 <!-- Start Videos -->
-    <div class="videos">
+<div class="videos">
     <h2 class="main-heading">Top Videos</h2>
     <div class="container">
         <div class="videos-holder">
@@ -763,31 +765,31 @@
 </div>
 <!-- End Videos -->
 <!-- Start Stats -->
-    <div class="stats" id="stats">
-        <h2>Our Awesome Stats</h2>
-        <div class="container">
-            <div class="box">
-                <i class="far fa-user fa-2x fa-fw" ></i>
-                    <h3>300</h3>
-                    <span>Clients</span>
-            </div>
-            <div class="box">
-                <i class="fas fa-code fa-2x fa-fw"></i>
-                    <h3>400</h3>
-                    <span>Project</span>
-            </div>
-            <div class="box">
-                <i class="fas fa-globe-asia fa-2x fa-fw"></i>
-                    <h3>12</h3>
-                    <span>Countries</span>
-                </div>
-            <div class="box">
-                <i class="fas fa-money-bill-alt fa-2x fa-fw"></i>
-                    <h3>500K</h3>
-                    <span>Money</span>
-            </div>
+<div class="stats" id="stats">
+    <h2>Our Awesome Stats</h2>
+    <div class="container">
+        <div class="box">
+            <i class="far fa-user fa-2x fa-fw"></i>
+            <h3 data-goal="300">0</h3>
+            <span>Clients</span>
         </div>
+        <div class="box">
+            <i class="fas fa-code fa-2x fa-fw"></i>
+            <h3 data-goal = "400">0</h3>
+            <span>Project</span>
         </div>
+        <div class="box">
+            <i class="fas fa-globe-asia fa-2x fa-fw"></i>
+            <h3 data-goal="12">0</h3>
+            <span>Countries</span>
+        </div>
+        <div class="box">
+            <i class="fas fa-money-bill-alt fa-2x fa-fw"></i>
+            <h3 data-goal="500">0</h3>
+            <span>Money</span>
+        </div>
+    </div>
+</div>
 <!-- End Stats -->
 
 <!-- Start Discount -->
@@ -795,29 +797,31 @@
     <div class="holder">
         <div class="disc">
             <div class="content">
-            <div class="dis-text">
-            <h2>We Have A Discount</h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis laboriosam eos quas. Assumenda blanditiis quia quibusdam doloremque impedit ea ad, facilis, quae laborum, distinctio voluptatem pariatur. Omnis minus sit dolores.
-            </p>
-        </div>
-                <img src="css/img/discount.png" alt="">  
+                <div class="dis-text">
+                    <h2>We Have A Discount</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis laboriosam eos quas.
+                        Assumenda blanditiis quia quibusdam doloremque impedit ea ad, facilis, quae laborum, distinctio
+                        voluptatem pariatur. Omnis minus sit dolores.
+                    </p>
+                </div>
+                <img src="css/img/discount.png" alt="">
             </div>
         </div>
-            <div class="form">
+        <div class="form">
             <div class="content">
                 <h2>Request A Discount</h2>
                 <form action="">
-                <input type="text" name="name" class="input" placeholder="Your Name">
-                <input type="text" name="mobile" class="input" placeholder="Your Mobile">
-                <input type="email" name="email"  class="input" placeholder="Your Email">
-                <textarea name="" placeholder="Enter Your Request"  class="input"></textarea>
-                <input type="submit" name = "message" value="Send" placeholder="Tell Us Your Needs" class="input">
-                
-            </form>
+                    <input type="text" name="name" class="input" placeholder="Your Name">
+                    <input type="text" name="mobile" class="input" placeholder="Your Mobile">
+                    <input type="email" name="email" class="input" placeholder="Your Email">
+                    <textarea name="" placeholder="Enter Your Request" class="input"></textarea>
+                    <input type="submit" name="message" value="Send" placeholder="Tell Us Your Needs" class="input">
+
+                </form>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <div class="spikes"></div>
 
@@ -832,36 +836,36 @@
 </div>
 <!-- End Special -->
 
-<!-- Start Footer -->   
-    <div class="footer">
-        <div class="container">
-            <div class="box">
-                <h2>Hammam</h2>
-                <div class="social">
-                    <ul>
-                        <li>
-                    <a href="">
-                    <i class="fab fa-facebook "></i>
-                    </a>
+<!-- Start Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="box">
+            <h2>Hammam</h2>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook "></i>
+                        </a>
                     </li>
 
                     <li>
-                    <a href="">
-                    <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                    <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
                 </ul>
-                </div>
-                <div class="text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, facilis?
-                </div>
             </div>
-            <div class="box">
+            <div class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, facilis?
+            </div>
+        </div>
+        <div class="box">
             <div class="links">
                 <ul>
                     <li>
@@ -869,19 +873,19 @@
                     </li>
                     <li>
                         <a href="">Imortant Link 2</a>
-                        
+
                     </li>
                     <li>
                         <a href="">Imortant Link 3</a>
-                        
+
                     </li>
                     <li>
                         <a href="">Imortant Link 4</a>
-                        
+
                     </li>
                     <li>
                         <a href="">Imortant Link 5</a>
-                        
+
                     </li>
                 </ul>
             </div>
@@ -892,7 +896,7 @@
                 <span>Sudan , Khartoum</span>
                 <span> Street 4 </span>
             </div>
-            
+
             <div class="line">
                 <i class="far fa-clock fa-fw"></i>
                 Business Hours From 10:00 to 18:00
@@ -900,9 +904,9 @@
             <div class="line">
                 <i class="fas fa-phone-alt"></i>
                 <div class="info">
-                <span>+249-123-456-789</span>
-                <span>+249-987-654-321</span>
-            </div>
+                    <span>+249-123-456-789</span>
+                    <span>+249-987-654-321</span>
+                </div>
             </div>
         </div>
         <div class="box footer-gallery">
@@ -914,8 +918,9 @@
             <img src="css/img/pic-6.jpg" alt="">
         </div>
     </div>
-        <p class="copyright">Made with &lt;3 Hammam</p>
-    </div>
+    <p class="copyright">Made with &lt;3 Hammam</p>
+</div>
 <!-- End Footer -->
+<script src="index.js"></script>
 </body>
 </html>
